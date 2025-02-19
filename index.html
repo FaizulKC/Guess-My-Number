@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Spicy+Rice&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess My Number</title>
+  </head>
+  <body>
+    <header>
+      <section class="header_para">
+        <button class="againBtn">Again!</button>
+        <p>&lt;Between 1 to 20&gt;</p>
+      </section>
+      <section class="header_title">
+        <h1>Guess My Number!</h1>
+      </section>
+      <section class="random_number"><span>?</span></section>
+    </header>
+    <main>
+      <section class="checknguess">
+        <form action="#">
+          <input
+            type="number"
+            name="guessInput"
+            id="guessInput"
+            min="1"
+            max="20"
+          />
+          <button class="checkbtn">Check!</button>
+        </form>
+      </section>
+      <section class="scores_section">
+        <p class="result">Start guessing...</p>
+        <p class="score">💯 Score: 20</p>
+        <p class="highscore">🥇 Highscore: 0</p>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
